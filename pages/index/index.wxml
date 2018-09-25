@@ -1,0 +1,100 @@
+<view class="weui-search-bar">
+  <view class="weui-search-bar_form">
+    <view class="weui-search-bar_box">
+      <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+      <input type="text" class="weui-search-bar_input" placeholder="{{searchtextbegin}}" bindinput="inputSearch" value='{{searchtext}}'/>
+      <!--试着把clear图标变成按钮实现清除效果-->
+      <button class="search-btn" wx:if="{{showsearch}}" bindtap="clearbtn">搜索</button>
+      <icon class="weui-icon-clear_in-box" type="clear" size="14" wx:if="{{showsearch}}"></icon>
+    </view>
+  </view>
+</view>
+<view class="weui-slide-picture">
+  <swiper class="index-banner" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{4000}}" duration="{{1000}}" circular="true">
+    <block wx:for="{{imgUrls}}" wx:key="*this">
+      <swiper-item>
+        <image class="slide-image" src="{{item}}" mode="widthFix"/>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<view class="article-list">
+  <navigator class="article-item">
+    <view class="article-img">
+      <image src="../../images/1.png" mode="aspectFill"></image>
+    </view>
+    <view class="article-text">
+      <view class="article-title">
+        <text>【2018年第37周EOS信息周报】\t一周重要信息均在于此\t|From:EOS Cannon|</text>
+      </view>
+      <view class="article-abstract">
+        <text>1\tEOS账户创建成本现在已经降低25%。21个出块节点中有超过15个同意并实施了Block</text>
+      </view>
+    </view>
+  </navigator>
+   <navigator class="article-item">
+    <view class="article-img">
+      <image src="../../images/2.png" mode="aspectFill"></image>
+    </view>
+     <view class="article-text">
+      <view class="article-title">
+        <text>币走远：9.17行情展望|From:币走远|</text>
+      </view>
+      <view class="article-abstract">
+        <text>首先提醒大家不要去玩期货，炒币加杠杆只是放大了出错的几率，珍爱钱钱原离尴尬。据cryptoglobe消息，近日Trybe</text>
+      </view>
+    </view>
+  </navigator>
+   <navigator class="article-item">
+    <view class="article-img">
+      <image src="../../images/3.png" mode="aspectFill"></image>
+    </view>
+     <view class="article-text">
+      <view class="article-title">
+        <text>币圈信息观察员用数据说话20180917|From:币圈观察|</text>
+      </view>
+      <view class="article-abstract">
+        <text>市值前20种数据变化详情(数据取自非小号早上10点)：上面数据红(^V^)涨，绿(T-T)跌...</text>
+      </view>
+    </view>
+  </navigator>
+   <navigator class="article-item">
+    <view class="article-img">
+      <image src="../../images/4.png" mode="aspectFill"></image>
+    </view>
+     <view class="article-text">
+      <view class="article-title">
+        <text>津巴布韦新任财政部长：加密货币可以解决津巴布韦的现金短缺问题|From:币圈消息小达人|</text>
+      </view>
+      <view class="article-abstract">
+        <text>据CCN消息， 根据津巴布韦新任财政部长Mthuli Ncube的说法，加密货币可以帮助南部非洲国家解决</text>
+      </view>
+    </view>
+  </navigator>
+   <navigator class="article-item">
+    <view class="article-img">
+      <image src="../../images/5.png" mode="aspectFill"></image>
+    </view>
+    <view class="article-text">
+      <view class="article-title">
+        <text>互联网思维与区块链思维|From:哪吒|</text>
+      </view>
+      <view class="article-abstract">
+        <text>上周，听一位资深的互联网圈内人士在讲近些年互联网大企业的发展和变迁。他特意跟我们强调了一个概念，互联网不是一个行业，不是</text>
+      </view>
+    </view>
+  </navigator>
+   <navigator class="article-item">
+    <view class="article-img">
+      <image src="../../images/6.png" mode="aspectFill"></image>
+    </view>
+    <view class="article-text">
+      <view class="article-title">
+        <text>区块链是否代表互联网的未来？|From:鱼顽主|</text>
+      </view>
+      <view class="article-abstract">
+        <text>过去这几年，随着互联网的成长，它变成了某些社会问题的替罪羊。今天的网络确实有很多问题，有虚假信息...</text>
+      </view>
+    </view>
+  </navigator>
+</view>
