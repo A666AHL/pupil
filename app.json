@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index"
+  ],
+  "window":{
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#6699ff",
+    "navigationBarTitleText": "explore币乎",
+    "backgroundTextStyle":"light"
+  },
+  "networkTimeout": {
+    "request": 30000
+  }
+}
